@@ -3,11 +3,11 @@ import org.junit.Test;
 
 import java.util.List;
 
-public class CodingAssignmentTests {
+public class SongsPlaylistTests {
 
     @Test
     public void testPlaySongAndGetRecentlyPlayedSongs() {
-        CodingAssignmentTestVagrant store = new CodingAssignmentTestVagrant(3);
+        SongsPlaylist store = new SongsPlaylist(3);
 
         // Test for a single user
         store.playSong("User1", "S1");
@@ -48,7 +48,7 @@ public class CodingAssignmentTests {
 
     @Test
     public void testCapacityZero() {
-        CodingAssignmentTestVagrant store = new CodingAssignmentTestVagrant(0);
+        SongsPlaylist store = new SongsPlaylist(0);
 
         store.playSong("User1", "S1");
         List<String> user1Songs = store.getRecentlyPlayedSongs("User1");
@@ -57,7 +57,7 @@ public class CodingAssignmentTests {
 
     @Test
     public void testNegativeCapacity() {
-        CodingAssignmentTestVagrant store = new CodingAssignmentTestVagrant(-1);
+        SongsPlaylist store = new SongsPlaylist(-1);
 
         store.playSong("User1", "S1");
         List<String> user1Songs = store.getRecentlyPlayedSongs("User1");

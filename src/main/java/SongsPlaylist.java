@@ -3,11 +3,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public class CodingAssignmentTestVagrant {
+public class SongsPlaylist {
     private int capacity;
     private final Map<String, LinkedList<String>> songUserMap;
 
-    public CodingAssignmentTestVagrant(int capacity) {
+    public SongsPlaylist(int capacity) {
         this.capacity = capacity;
         this.songUserMap = new HashMap<>();
     }
