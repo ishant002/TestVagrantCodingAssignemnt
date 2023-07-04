@@ -22,7 +22,7 @@ public class CodingAssignmentTestVagrant {
         // Remove the song if it's already present in the user's playlist
         songs.remove(song);
 
-        // Add the song at the beginning of the user's playlist
+        // Add the song at the end of the user's playlist
         songs.addLast(song);
 
         // Remove the least recently played song if the playlist exceeds the capacity
